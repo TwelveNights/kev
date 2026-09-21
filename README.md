@@ -29,7 +29,7 @@ You'll need Python 3.12 or 3.13 and [uv](https://docs.astral.sh/uv/). The repo's
 
 ```bash
 git clone https://github.com/jaredpalmer/kev.git && cd kev
-uv sync --extra serve
+uv sync --extra serve  # add --extra rocm on ROCm to pull the ROCm build of torch instead of CUDA
 uv run --extra serve python -m kev.serve --run jaredpalmer/kev-4b --port 8009
 ```
 
